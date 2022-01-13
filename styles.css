@@ -1,0 +1,36 @@
+:root {
+  --main-color: #e5e5e5;
+  --main-second-color: #f5f4fa;
+  --hero-footer-color: #2f303a;
+  --accent-color: #2196f3;
+  --text-main: #212121;
+  --text-second: #757575;
+}
+
+body {
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-second);
+  background-color: var(--main-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-dark {
+  color: black;
+}
+hr {
+  border: none;
+  background-color: #ececec;
+  height: 1px;
+}
