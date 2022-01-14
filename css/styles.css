@@ -1,5 +1,5 @@
 :root {
-  --main-color: #e5e5e5;
+  --main-color: #fff;
   --main-second-color: #f5f4fa;
   --hero-footer-color: #2f303a;
   --accent-color: #2196f3;
@@ -7,15 +7,23 @@
   --text-second: #757575;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
-  list-style-type: none;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: var(--text-second);
   background-color: var(--main-color);
 }
+
+li {
+  list-style: none;
+}
+
+/* ---------------------- HEADER ---------------------- */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -29,8 +37,169 @@ body {
 .logo-dark {
   color: black;
 }
+
+.header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--text-main);
+}
+
+.header-text:hover,
+.header-text:focus {
+  color: var(--accent-color);
+}
+
+.header-cont {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--text-second);
+}
+
+.header-cont-text:hover,
+.header-cont-text:focus {
+  color: var(--accent-color);
+}
+
 hr {
   border: none;
   background-color: #ececec;
   height: 1px;
+}
+
+/* ---------------------- HERO ---------------------- */
+
+.hero {
+  background-color: var(--hero-footer-color);
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: var(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-btn {
+  background: var(--accent-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+/* ---------------------- ADVANTAGE ---------------------- */
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.advantage-pre-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-main);
+}
+
+.advantage-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-second);
+}
+
+/* ---------------------- WHAT WE'RE DOING ---------------------- */
+
+.doing {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-main);
+}
+
+/* ---------------------- WHAT WE'RE DOING ---------------------- */
+
+.our-team {
+  background-color: var(--main-second-color);
+}
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-main);
+}
+
+.team-item {
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-main);
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-second);
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.footer {
+  background-color: var(--hero-footer-color);
+}
+
+.logo-light {
+  color: var(--main-color);
+}
+
+.address-list {
+  display: contents;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-map {
+  color: var(--main-color);
 }
