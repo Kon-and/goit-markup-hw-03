@@ -12,17 +12,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  color: var(--text-main);
   background-color: var(--main-color);
 }
 
 li {
   list-style: none;
 }
+
 .accent-text:hover,
 .accent-text:focus {
   color: var(--accent-color);
@@ -45,24 +48,15 @@ li {
 
 .header-list {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--text-main);
 }
 
 .header-cont {
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-second);
-}
-
-hr {
-  border: none;
-  background-color: #ececec;
-  height: 1px;
 }
 
 /* ---------------------- HERO ---------------------- */
@@ -70,6 +64,7 @@ hr {
 .hero {
   background-color: var(--hero-footer-color);
 }
+
 .hero-text {
   font-weight: 900;
   font-size: 44px;
@@ -79,6 +74,7 @@ hr {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .hero-btn {
   cursor: pointer;
   background: var(--accent-color);
@@ -111,16 +107,12 @@ hr {
 
 .advantage-pre-text {
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--text-main);
 }
 
 .advantage-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--text-second);
@@ -129,12 +121,11 @@ hr {
 /* ---------------------- WHAT WE'RE DOING ---------------------- */
 
 .doing {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-main);
 }
 
 /* ---------------------- WHAT WE'RE DOING ---------------------- */
@@ -142,13 +133,13 @@ hr {
 .our-team {
   background-color: var(--main-second-color);
 }
+
 .team {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-main);
 }
 
 .team-item {
@@ -164,11 +155,9 @@ hr {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--text-main);
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -178,7 +167,7 @@ hr {
 
 /* ---------------------- FOOTER ---------------------- */
 
-.footer {
+.footer-box {
   background-color: var(--hero-footer-color);
 }
 
@@ -189,8 +178,6 @@ hr {
 .address-list {
   display: contents;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -215,7 +202,6 @@ hr {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--text-main);
 }
 
 .filters-btn:focus,
@@ -237,11 +223,9 @@ hr {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--text-main);
 }
 
 .projects-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
