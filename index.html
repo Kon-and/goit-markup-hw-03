@@ -16,43 +16,43 @@
     <link rel="stylesheet" href="./css/modern-normalize.css" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="header-container">
-          <nav class="navigation">
-            <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
-            <ul class="header-list">
-              <li class="header-item">
-                <a class="header-text accent-text" href="" style="color: #2196f3">Студия</a>
-              </li>
-              <li class="header-item">
-                <a class="header-text accent-text" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="header-item"><a class="header-text accent-text" href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="contact-conteiner">
-            <ul class="header-cont">
-              <li class="header-cont-item">
-                <a class="header-cont-text accent-text" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="header-cont-item">
-                <a class="header-cont-text accent-text" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
+    <header>
+      <div class="header-container container">
+        <a class="logo" href="">Web<span class="logo-dark">Studio</span></a>
+        <nav class="navigation">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-text accent-text" href="" style="color: #2196f3">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="header-text accent-text" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item"><a class="header-text accent-text" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="contact-conteiner">
+          <ul class="header-cont">
+            <li class="header-cont-item">
+              <a class="header-cont-text accent-text" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-cont-item">
+              <a class="header-cont-text accent-text" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
-      </header>
-      <main>
-        <section class="hero">
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
           <button class="hero-btn" type="button">Заказать услугу</button>
-        </section>
-        <section class="advantage">
+        </div>
+      </section>
+      <section class="advantage">
+        <div class="container">
           <h2 class="hidden">Наши преимущества</h2>
           <div class="advantage-box">
             <ul class="advantage-list">
@@ -84,8 +84,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="wwdoing">
+        </div>
+      </section>
+      <section class="wwdoing">
+        <div class="container">
           <h2 class="doing">Чем мы занимаемся</h2>
           <ul class="doing-list">
             <li class="doing-item">
@@ -116,8 +118,10 @@
               />
             </li>
           </ul>
-        </section>
-        <section class="our-team">
+        </div>
+      </section>
+      <section class="our-team">
+        <div class="container">
           <h2 class="team">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
@@ -128,8 +132,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-position" lang="en">Product Designer</p>
+              <div class="team-member">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-position" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -139,8 +145,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-position" lang="en">Frontend Developer</p>
+              <div class="team-member">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -150,8 +158,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-position" lang="en">Marketing</p>
+              <div class="team-member">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-position" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -161,13 +171,17 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-position" lang="en">UI Designer</p>
+              <div class="team-member">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </main>
-      <footer class="footer-box">
+        </div>
+      </section>
+    </main>
+    <footer class="footer-box">
+      <div class="container">
         <a class="logo logo-footer" href="">Web<span class="logo-light">Studio</span></a>
         <address class="address-box">
           <ul class="address-list">
@@ -191,7 +205,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

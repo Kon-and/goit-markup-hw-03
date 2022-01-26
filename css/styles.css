@@ -37,9 +37,10 @@ button {
 }
 
 .container {
+  padding: 0 15px;
   width: 1200px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 section {
@@ -74,12 +75,13 @@ li {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin: 25px 0;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-dark {
   color: #000000;
-  margin-right: 90px;
 }
 
 .header-list {
@@ -87,23 +89,28 @@ li {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   display: flex;
-  align-items: center;
-  margin: 32px 0;
+  margin-left: 93px;
 }
+
 .header-item + .header-item {
   margin-left: 50px;
 }
 .contact-conteiner {
-  align-items: center;
+  margin-left: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation {
-  display: flex;
-  align-items: center;
-  margin-right: 330px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-cont-item + .header-cont-item {
   margin-left: 50px;
+}
+
+.header-cont-item {
+  display: inline-block;
 }
 
 .header-cont {
@@ -111,18 +118,11 @@ li {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-second);
-  display: flex;
-  margin: 32px 0;
-  align-items: center;
 }
 
 .header-container {
   display: flex;
-  height: 80px;
-  padding-left: 15px;
-  padding-right: 15px;
   align-items: center;
-  justify-content: space-between;
   border-bottom: 1px solid #ececec;
 }
 
@@ -130,11 +130,9 @@ li {
 
 .hero {
   background-color: var(--hero-footer-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-text {
@@ -142,7 +140,6 @@ li {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -155,21 +152,14 @@ li {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
-  font-family: inherit;
+  min-width: 136px;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-color);
   border: none;
+  padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -204,6 +194,7 @@ li {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--text-second);
+  margin-top: 10px;
 }
 
 .advantage-box {
@@ -212,13 +203,7 @@ li {
   margin: 0px 0px;
   justify-content: center;
 }
-.advantage-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 270px;
-  height: 100px;
-}
+
 .advantage-item + .advantage-item {
   margin-left: 30px;
 }
@@ -230,18 +215,10 @@ li {
   justify-content: center;
 }
 
-.advantage-text {
-  padding-top: 10px;
-}
-
 /* ---------------------- WHAT WE'RE DOING ---------------------- */
 
 .wwdoing {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  flex-direction: column;
+  padding-top: 0;
 }
 
 .doing {
@@ -250,16 +227,11 @@ li {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  display: block;
-  justify-content: center;
-
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
+
 .doing-list {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .doing-item + .doing-item {
@@ -270,20 +242,15 @@ li {
 
 .our-team {
   background-color: var(--main-second-color);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .team {
-  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   letter-spacing: 0.03em;
   text-align: center;
-
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .team-item {
@@ -291,9 +258,6 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .team-item + .team-item {
@@ -302,9 +266,6 @@ li {
 
 .team-list {
   display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-name {
@@ -313,7 +274,7 @@ li {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-position {
@@ -322,23 +283,23 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-second);
-  margin-bottom: 30px;
-  padding-top: 10px;
+}
+.team-member {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ---------------------- FOOTER ---------------------- */
 
 .footer-box {
   background-color: var(--hero-footer-color);
-  display: flex;
-  flex-direction: column;
-  padding-left: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
-  margin-top: 60px;
-  margin-bottom: 20px;
   margin-right: auto;
+  padding: 0;
 }
 
 .logo-light {
@@ -353,7 +314,10 @@ li {
   color: rgba(255, 255, 255, 0.6);
 }
 .address-box {
-  margin-bottom: 60px;
+  margin-top: 20px;
+}
+.address-item + .address-item {
+  margin-top: 9px;
 }
 
 .address-map {
@@ -379,16 +343,10 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
   letter-spacing: 0.06em;
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
+  min-width: 73px;
   border: none;
+  padding: 6px 22px;
 }
 
 .filters-btn:focus,
@@ -401,12 +359,17 @@ li {
 
 .projects-items {
   background: var(--main-color);
-  border: 1px solid var(--galery-border);
   box-sizing: border-box;
 }
 
 .projects-items:nth-child(n + 4) {
   margin-top: 30px;
+}
+.projects-items {
+  margin-left: 30px;
+}
+.projects-items:nth-child(3n + 1) {
+  margin-left: 0;
 }
 
 .projects-pre-text {
@@ -425,12 +388,10 @@ li {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 .border {
-  border: 1px solid color:none;
+  border-width: 0 1px 1px 1px;
+  border-color: var(--galery-border);
+  border-style: solid;
   padding: 20px 24px;
 }
