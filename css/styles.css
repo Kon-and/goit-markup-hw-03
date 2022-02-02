@@ -6,6 +6,7 @@
   --text-main: #212121;
   --text-second: #757575;
   --galery-border: #eee;
+  --icons-color: #afb1b8;
 }
 
 p,
@@ -80,6 +81,14 @@ li {
   padding-bottom: 25px;
 }
 
+.header-socials-icons {
+  fill: var(--text-second);
+}
+
+.header-cont-item:hover .header-socials-icons {
+  fill: var(--accent-color);
+}
+
 .logo-dark {
   color: #000000;
 }
@@ -133,6 +142,7 @@ li {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background: rgba(47, 48, 58, 0.4) url(/images/background-img.png) no-repeat center;
 }
 
 .hero-text {
@@ -199,7 +209,6 @@ li {
 
 .advantage-box {
   display: flex;
-  height: 100px;
   margin: 0px 0px;
   justify-content: center;
 }
@@ -213,6 +222,17 @@ li {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
+}
+
+.advantage-icons {
+  width: 70px;
+  height: 70px;
+}
+.advantage-icons-box {
+  background-color: var(--main-second-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 /* ---------------------- WHAT WE'RE DOING ---------------------- */
@@ -283,10 +303,87 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-second);
+  margin-bottom: 16px;
 }
 .team-member {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-socials-item {
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-socials-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-socials-item + .team-socials-item {
+  margin-left: 10px;
+}
+
+.socials-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--icons-color);
+}
+
+.team-socials-item:hover,
+.team-socials-item:focus {
+  background-color: var(--accent-color);
+}
+
+.team-socials-item:hover .socials-icons {
+  fill: var(--main-color);
+}
+
+.team-socials-link {
+  display: flex;
+}
+
+/* ---------------------- OUR CLIENTS ---------------------- */
+.clients-head {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-icons {
+  width: 106px;
+  height: 60px;
+  fill: var(--icons-color);
+}
+.clients-item {
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-item:hover,
+.clients-item:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-item:hover .clients-icons {
+  fill: var(--accent-color);
 }
 
 /* ---------------------- FOOTER ---------------------- */
@@ -297,9 +394,34 @@ li {
   padding-bottom: 60px;
 }
 
+.address-socials {
+  display: flex;
+}
+
+.footer-socials-list {
+  display: flex;
+  padding-top: 20px;
+}
+
+.footer-socials-item {
+  width: 44px;
+  height: 44px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-socials-item + .footer-socials-item {
+  margin-left: 10px;
+}
+
 .logo-footer {
-  margin-right: auto;
   padding: 0;
+  font-style: normal;
+  margin-right: 156px;
+  margin-bottom: 20px;
 }
 
 .logo-light {
@@ -313,15 +435,46 @@ li {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address-box {
-  margin-top: 20px;
-}
+
 .address-item + .address-item {
   margin-top: 9px;
 }
 
 .address-map {
   color: var(--main-color);
+}
+
+.footer-socials-link {
+  display: flex;
+}
+
+.footer-socials {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding-top: 12px;
+}
+
+.footer-socials-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-color);
+}
+
+.footer-socials-item {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-socials-item:hover,
+.footer-socials-item:focus {
+  background-color: var(--accent-color);
 }
 
 /* ------------------------------------------- PORTFOLIO ------------------------------------------- */
