@@ -89,6 +89,10 @@ li {
   fill: var(--accent-color);
 }
 
+.header-socials-icons {
+  margin-right: 10px;
+}
+
 .logo-dark {
   color: #000000;
 }
